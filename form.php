@@ -11,38 +11,38 @@ include("connection.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Submission</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
 
-        .container {
-            max-width: 500px;
-            margin: auto;
-        }
+    .container {
+        max-width: 500px;
+        margin: auto;
+    }
 
-        .title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+    .title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
 
-        input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
-            box-sizing: border-box;
-        }
+    input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
 
-        button {
-            padding: 10px 15px;
-            font-size: 16px;
-        }
+    button {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
     </style>
 </head>
 
@@ -59,7 +59,7 @@ include("connection.php");
 
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" name="phone" required>
-<!-- 
+                <!-- 
                 <label for="id">ID :</label>
                 <input type="text" id="id" name="id" required> -->
 
@@ -73,20 +73,6 @@ include("connection.php");
 
 
 <?php
-    // if(isset($_POST['submit'])){
-    //     $name  = $_POST['name'];
-    //     $job   = $_POST['job'];
-    //     $phone =$_POST['phone'];
-    //     $query= "INSERT INTO form(name,job,phone) VALUES('$name','$job','$phone')";
-
-    //     $data = mysqli_query($conn,$query);
-    //     if($data){
-    //         echo"done";
-
-    //     }else{
-    //         echo "faild";
-    //     }
-    // }
 
 
     if (isset($_POST['submit'])) {
@@ -105,7 +91,3 @@ include("connection.php");
 }
 
 ?>
-
-
-
-
