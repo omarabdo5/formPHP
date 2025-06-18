@@ -10,7 +10,7 @@ ini_set('display_errors', 1);
     $conn = mysqli_connect($servername,$username,$password,$dbname);
     if($conn)
     {
-        echo"connection OK";
+        // echo"connection OK";
     }
     else
     {
